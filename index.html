@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <style>
+
+                    .side-buttons .vol-up {
+                              position: absolute;
+                              background: black;
+                              padding: 8px;
+                              border-radius: 8px;
+                              top: 18%;
+                              left: 63%;
+                              height: 30px;
+                    }
+
+                    .side-buttons .vol-dwn {
+                              position: absolute;
+                              background: black;
+                              padding: 8px;
+                              border-radius: 8px;
+                              top: 26%;
+                              left: 63%;
+                              height: 30px;
+                    }
+
+                    .side-buttons .power-btn {
+                              position: absolute;
+                              background: black;
+                              padding: 8px;
+                              border-radius: 8px;
+                              top: 38%;
+                              left: 63%;
+                              height: 30px;
+                    }
+
+                    .container {
+                              border: 8px solid black;
+                              border-radius: 20px;
+                              background: #30aa5f;
+                              padding: 12px;
+                              padding-bottom: 41%;
+                              width: 25%;
+                              margin-left: auto;
+                              margin-right: auto;
+                    }
+
+                    /* .container img {
+                              position: absolute;
+                              top: 2.8%;
+                              left: 37%;
+                              width: 26%;
+                              height: 670px;
+                              border-radius: 17px;
+                              opacity: 0.6;
+                    } */
+
+                    /* .container .network-providers p {
+                              position: absolute;
+                              top: 18px;
+                              left: 38%;
+                              color: white;
+                              font-size: smaller;
+                              word-spacing: 2px;
+                    } */
+
+                    .container .mtn-network-bars span#bar1 {
+                              position: absolute;
+                              border: 1px solid  white;
+                              top: 36px;
+                              left: 57.1%;
+                              height: 4px;
+                    }
+
+                    .container .mtn-network-bars span#bar2 {
+                              position: absolute;
+                              border: 1px solid white;
+                              top: 34px;
+                              left: 57.3%;
+                              height: 6px;
+                    }
+
+                    .container .mtn-network-bars span#bar3 {
+                              position: absolute;
+                              border: 1px solid white;
+                              border-radius: 2px;
+                              top: 31px;
+                              left: 57.5%;
+                              height: 9px;
+                    }
+
+                    .container .mtn-network-bars span#bar4 {
+                              position: absolute;
+                              border: 1px solid white;
+                              border-radius: 2px;
+                              top: 28px;
+                              left: 57.7%;
+                              height: 12px;
+                    }
+
+                    .container .airtel-network-bars span#bar1 {
+                              position: absolute;
+                              border: 1px solid white;
+                              border-radius: 2px;
+                              top: 36px;
+                              left: 58.3%;
+                              height: 4px;
+                    }
+
+                    .container .airtel-network-bars span#bar2 {
+                              position: absolute;
+                              border: 1px solid white;
+                              border-radius: 2px;
+                              top: 34px;
+                              left: 58.5%;
+                              height: 6px;
+                    }
+
+                    .container .airtel-network-bars span#bar3 {
+                              position: absolute;
+                              border: 1px solid white;
+                              border-radius: 2px;
+                              top: 31px;
+                              left: 58.7%;
+                              height: 9px;
+                    }
+
+                    .container .airtel-network-bars span#bar4 {
+                              position: absolute;
+                              border: 1px solid white;
+                              border-radius: 2px;
+                              top: 28px;
+                              left: 58.9%;
+                              height: 12px;
+                    }
+
+                    .container span#battery-point {
+                              position: absolute;
+                              border: 1px solid white;
+                              background: white;
+                              padding: 0px;
+                              top: 30px;
+                              left: 59.7%;
+                              color: white;
+                              height: 4px;
+                    }
+
+                    .container span#battery {
+                              position: absolute;
+                              border: 1px solid white;
+                              border-radius: 4px;
+                              padding: 1px 7px 1px 7px;
+                              top: 27px;
+                              left: 60%;
+                              color: white;
+                              font-size: xx-small;
+                              font-weight: lighter;
+                              text-align: center;
+                    }
+
+                    .container .time p#clock {
+                              position: absolute;
+                              top: 3%;
+                              left: 38%;
+                              color: white;
+                              font-size: x-small;
+                              font-weight: lighter;
+                    }
+
+                    .container .caller-icon {
+                              position: absolute;
+                              border:  1px solid white;
+                              border-radius: 70px;
+                              padding: 40px;
+                              top: 20%;
+                              left: 47%;
+                              background: rgb(175, 163, 163);
+                    }
+
+                    .container .head {
+                              position: absolute;
+                              border-radius: 20px;
+                              background: white;
+                              padding: 19px;
+                              font-size: xx-large;
+                              top: 23%;
+                              left: 25%;
+                    }
+
+                    .container .body {
+                              position: absolute;
+                              border-top-left-radius: 100%;
+                              border-top-right-radius: 100%;
+                              border-bottom-left-radius: 100%;
+                              border-bottom-right-radius: 100%;
+                              background: white;
+                              padding: 3px 28px 21px 28px;
+                              font-size: xx-large;
+                              top: 70%;
+                              left: 15% ;
+                    }
+
+                    .number-calling  {
+                              position: absolute;
+                              top: 31%;
+                              left: 45%;
+                              color: white;
+                              font-size: 25px;
+                    }
+
+                    .sim span#sim-1 {
+                              position: absolute;
+                              top: 40%;
+                              left: 47.8%;
+                              border: 1px solid white;
+                              border-radius: 2px;
+                              border-top-left-radius: 0px;
+                              border-top-right-radius: 25%;
+                              color: white;
+                              padding: 2px;
+                              font-size: x-small;
+                    }
+
+                    .sim span#country {
+                              position: absolute;
+                              top: 40%;
+                              left: 49%;
+                              color: white;
+                              font-size: 15px;
+                              font-family: sans-serif;
+                    }
+
+                    .sim span#call-time {
+                              position: absolute;
+                              top: 44%;
+                              left: 49%;
+                              color: white;
+                              font-size: 15px;
+                              font-family: sans-serif;
+                    } 
+
+                    .end-call {
+                              position: absolute;
+                              top: 82%;
+                              left: 48%;
+                              border: 1px solid red;
+                              border-radius: 50px;
+                              background: rgb(253, 6, 6);
+                              padding: 23px;
+                    }
+
+/* 
+                    .container .time p#date {
+                              position: absolute;
+                              top: 25%;
+                              left: 46%;
+                              color: white;
+                              font-weight: lighter;
+                              letter-spacing: 2px;
+                    } */
+
+                    /* .container .unlock span#text {
+                              position: absolute;
+                              top: 88%;
+                              left: 44.6%;
+                              color: white;
+                              font-weight: lighter;
+                              letter-spacing: 3px;
+                    } */
+
+                    /* .container .unlock span#icon {
+                              position: absolute;
+                              top: 88%;
+                              left: 56%;
+                              color: white;
+                              letter-spacing: 5px;
+                    } */
+
+          </style>
+</head>
+<body>
+          <div class="side-buttons">
+                    <div class="vol-up"></div>
+                    <div class="vol-dwn"></div>
+                    <div class="power-btn"></div>
+          </div>
+
+          <div class="container">
+                    <!-- <img src="assests/images/team1.jpg" alt="myimage" width="25px" height="25px"> -->
+
+                    <!-- <div class="network-providers">
+                              <p>MTN NG - Airtel NG</p>
+                    </div> -->
+
+                    <div class="time">
+                              <p id="clock"> 03:21</p>
+                              <!-- <p id="date">Thu, Jun 9 PM</p> -->
+                    </div>
+
+                    <div class="mtn-network-bars">
+                              <span id="bar1"></span><br>
+                              <span id="bar2"></span><br>
+                              <span id="bar3"></span><br>
+                              <span id="bar4"></span>
+                    </div>
+
+                    <div class="airtel-network-bars">
+                              <span id="bar1"></span><br>
+                              <span id="bar2"></span><br>
+                              <span id="bar3"></span><br>
+                              <span id="bar4"></span>
+                    </div>
+
+                    <div class="battery-properties">
+                              <span id="battery-point"></span><br>
+                              <span id="battery">99</span>
+                    </div>
+
+<!-- 
+                    <div class="unlock">
+                              <span id="text"> Slide to unlock</span><span id="icon"> >>></span>
+                    </div> -->
+
+                    <div class="caller-icon">
+                              <div class="head"></div>
+                              <div class="body"></div>
+                    </div>
+
+                    <div class="number-calling">
+                              <p> 08149141627</p>
+                    </div>
+
+                    <div class="sim">
+                              <span id="sim-1">1</span>
+                              <span id="country">Nigeria</span>
+                              <span id="call-time">00:07</span>
+                    </div>
+                    <div class="end-call"></div>
+          </div>
+</body>
+</html>
